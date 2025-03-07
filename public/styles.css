@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+#videoContainer {
+    position: relative;
+    width: 80%;
+    margin: 20px auto;
+    background: #333;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#player {
+    width: 100%;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+#controls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+label {
+    color: white;
+    margin-right: 5px;
+}
+
+select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#uploadSection {
+    margin-top: 20px;
+}
+
+#progressContainer {
+    margin: 10px auto;
+    width: 80%;
+    background: #444;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+#progressBar {
+    background: #76c7c0;
+    height: 100%;
+    width: 0;
+    transition: width 0.2s;
+}
+
+.hidden {
+    display: none;
+}
+
+.modal-content {
+    background: #333;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

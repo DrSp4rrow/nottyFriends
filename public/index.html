@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Reproductor de Video</title>
+    </head>
+    <body>
+        <div id="uploadSection">
+            <input type="file" id="videoInput" accept="video/mkv" />
+            <button id="uploadButton">Subir Video</button>
+            <div id="progressContainer" style="display: none">
+                <div id="progressBar"></div>
+            </div>
+        </div>
+        <ul id="fileList"></ul>
+        <div id="videoContainer">
+            <video id="player" controls></video>
+            <div id="controls">
+                <label for="audioTracks">Audio:</label>
+                <select id="audioTracks">
+                    <option value="">Seleccionar pista de audio</option>
+                </select>
+                <label for="subtitles">Subtítulos:</label>
+                <select id="subtitles">
+                    <option value="">Seleccionar subtítulo</option>
+                </select>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div id="modal" class="hidden">
+            <div class="modal-content">
+                <p>¡Archivo subido con éxito!</p>
+                <button id="closeModal">Cerrar</button>
+            </div>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
