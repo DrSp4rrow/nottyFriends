@@ -18,6 +18,8 @@ function processFileName(filename) {
         filename = filename.substring(0, match.index + 4) + extname;
         console.log(filename);
     }
+    // Normalizar y eliminar acentos
+    filename = filename.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 
     // Reemplazar los espacios por guiones
     filename = filename.replace(/[()]/g, "");
